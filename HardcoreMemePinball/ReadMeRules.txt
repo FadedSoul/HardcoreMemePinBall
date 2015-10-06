@@ -57,8 +57,9 @@ trekker/louncher
 	laat het krimpen en wegschieten(unity collision plis >_>)		
 }
 
-flippers
+flippers en objects
 {
+	maak de bouncing thingy met code
 	maak goed werkende flippers
 }
 
