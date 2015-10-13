@@ -1,15 +1,31 @@
 fileFormatVersion: 2
-guid: db4797b60d2ebc04e8841de7fa7d8969
-timeCreated: 1444123328
+guid: c1e32f88fc4ad0e498f2d84bd60fcce1
+timeCreated: 1444126801
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
   fileIDToRecycleName:
     100000: //RootNode
+    100002: group7
+    100004: pasted__pCube5
+    100006: pCube5
+    100008: pCube6
+    100010: polySurface4
+    100012: transform11
+    100014: transform12
+    100016: transform13
     400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: pCube4
+    400002: group7
+    400004: pasted__pCube5
+    400006: pCube5
+    400008: pCube6
+    400010: polySurface4
+    400012: transform11
+    400014: transform12
+    400016: transform13
+    2300000: polySurface4
+    3300000: polySurface4
+    4300000: polySurface4
     9500000: //RootNode
   materials:
     importMaterials: 1
