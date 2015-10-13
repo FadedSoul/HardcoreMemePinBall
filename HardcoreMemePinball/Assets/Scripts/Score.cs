@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Score : MonoBehaviour {
     private int _Score;
 	[SerializeField]
-    private Text ScoreText;
+    private Text _ScoreText;
     public int PlayerScore
     {
         get { return _Score; }
@@ -15,17 +15,16 @@ public class Score : MonoBehaviour {
 	void Start () 
 	{
 		SetScoreText ();
-	}
-	
+	}	
 	// Update is called once per frame
 	void FixedUpdate () 
 	{
-		//Debug.Log("Je hebt :" + _Score + " score" );
+
 	}
 
     public void SetScoreText()
 	{
-        ScoreText.text = "Score: " + _Score.ToString();
+        _ScoreText.text = "Score: " + _Score.ToString();
 		if (_Score == 100) 
 		{
 			Debug.Log("Je hebt 100 score");
