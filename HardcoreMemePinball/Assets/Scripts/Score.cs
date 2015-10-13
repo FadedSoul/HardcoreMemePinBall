@@ -4,25 +4,32 @@ using UnityEngine.UI;
 
 public class Score : MonoBehaviour {
     private int _Score;
-    private Text _ScoreText;
+	[SerializeField]
+    private Text ScoreText;
     public int PlayerScore
     {
         get { return _Score; }
         set { _Score = value; }
     }
 	// Use this for initialization
-	void Start () {
-        SetScoreText();
+	void Start () 
+	{
+		SetScoreText ();
 	}
 	
 	// Update is called once per frame
-	void Update () {
-	
+	void FixedUpdate () 
+	{
+		//Debug.Log("Je hebt :" + _Score + " score" );
 	}
 
-    void SetScoreText()
-    {
-        _ScoreText.text = "Score: " + _Score.ToString();
+    public void SetScoreText()
+	{
+        ScoreText.text = "Score: " + _Score.ToString();
+		if (_Score == 100) 
+		{
+			Debug.Log("Je hebt 100 score");
+		}
     }
 
 }
