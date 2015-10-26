@@ -9,6 +9,7 @@ TagManager:
   - Ground
   - LeftFlipper
   - RightFlipper
+  - Die
   layers:
   - Default
   - TransparentFX
