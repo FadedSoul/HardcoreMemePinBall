@@ -10,6 +10,7 @@ TagManager:
   - LeftFlipper
   - RightFlipper
   - Die
+  - ScalePickUp
   layers:
   - Default
   - TransparentFX
