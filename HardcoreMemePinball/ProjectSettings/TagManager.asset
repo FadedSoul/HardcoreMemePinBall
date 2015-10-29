@@ -10,6 +10,7 @@ TagManager:
   - LeftFlipper
   - RightFlipper
   - Die
+  - stopper
   layers:
   - Default
   - TransparentFX
