@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class ApplyForceAtOffet : MonoBehaviour {
+public class Flippers : MonoBehaviour {
     [SerializeField]
 	private float _force = 100.0f;
     [SerializeField]

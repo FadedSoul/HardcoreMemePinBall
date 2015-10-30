@@ -11,13 +11,6 @@ public class Bumper : MonoBehaviour {
 	[SerializeField]
 	private int _GainScore = 10;
 
-	void Start()
-	{
-
-	}
-	void Update(){
-
-	}
 	void OnCollisionEnter()
 	{
 
