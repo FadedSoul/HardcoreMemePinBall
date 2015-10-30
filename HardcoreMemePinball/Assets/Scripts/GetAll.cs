@@ -48,7 +48,6 @@ public class GetAll : MonoBehaviour
             myText.text += text + " ";
 
         }
-
     }
 
     // Update is called once per frame
