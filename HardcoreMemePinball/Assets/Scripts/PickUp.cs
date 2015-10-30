@@ -15,14 +15,14 @@ public class PickUp : MonoBehaviour {
 		{
 			if(this.gameObject.tag == "Scale")
 			{	
-				this.gameObject.transform.position -= new Vector3(0,1,0);
-				_player.transform.localScale = new Vector3 (_scale, _scale, _scale);				
+				this.gameObject.transform.position -= new Vector3(0,2,0);
+				_player.transform.localScale = new Vector3 (_scale, _scale, _scale);
 		   		StartCoroutine(PickUpScaleTimeOut());
 			}
 			if(this.gameObject.tag == "Multiply")
 			{
-				this.gameObject.transform.position -= new Vector3(0,1,0);
-				Instantiate(_player, new Vector3(1.3f, 1.75f, -4.5f), Quaternion.Euler(0, 180, 0));
+				this.gameObject.transform.position -= new Vector3(0,2,0);
+				Instantiate(_player, new Vector3(1.3f, 1.7f, -4.5f), Quaternion.Euler(0, 180, 0));
 				StartCoroutine(PickUpMultiplyTimeOut());
 			}
 		}
@@ -31,16 +31,16 @@ public class PickUp : MonoBehaviour {
 
 	IEnumerator PickUpScaleTimeOut()
 	{
-		yield return new WaitForSeconds(10);
+		yield return new WaitForSeconds(5);
 		_player.transform.localScale = new Vector3(1,1,1);
-		Destroy(this.gameObject);
+		this.gameObject.transform.position = new Vector3(0,0,0);
 
 	}
 	IEnumerator PickUpMultiplyTimeOut()
 	{
 		yield return new WaitForSeconds(10);
 		Destroy(GameObject.Find("Player(Clone)"));
-		Destroy(this.gameObject);
+		this.gameObject.transform.position = new Vector3(0,0,0);
 		
 	}
 }

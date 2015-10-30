@@ -8,6 +8,7 @@ public class PickUpManager : MonoBehaviour {
 	private GameObject _PickUpMultiply;
 	private bool ActivePickUp = true;
 	private int _randomPick;
+	
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -26,19 +27,19 @@ public class PickUpManager : MonoBehaviour {
 
 	IEnumerator PickUpCoolDown()
 	{
-		yield return new WaitForSeconds(20);
+		yield return new WaitForSeconds(10);
 		if(ActivePickUp == false)
 		{
 			_randomPick = Random.Range(1,3);
 			Debug.Log(_randomPick);
 			if(_randomPick == 1)
 			{
-				Instantiate(_PickUpMultiply);
+				_PickUpMultiply.transform.position += new Vector3(0,2,0);
 				ActivePickUp = true;
 			}
 			else if(_randomPick == 2)
 			{
-				Instantiate(_PickUpScale);
+				_PickUpScale.transform.position += new Vector3(0,2,0);
 				ActivePickUp = true;
 			}
 		}
