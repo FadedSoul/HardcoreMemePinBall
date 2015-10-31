@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52cfdf09a04128b42aec0cbec58b354d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PickUpScale: {fileID: 101590, guid: e4e196eeb6aab2445819c9dd65a99636, type: 2}
-  _PickUpMultiply: {fileID: 120074, guid: fea38dc45fd6ace4ab02b7002c4890df, type: 2}
+  _PickUpScale: {fileID: 159108, guid: 44dcfb26ff8aa674c8b848229ee729e5, type: 2}
+  _PickUpMultiply: {fileID: 151136, guid: fea38dc45fd6ace4ab02b7002c4890df, type: 2}
 --- !u!136 &13672904
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -61,7 +61,15 @@ Prefab:
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
-    m_Modifications: []
+    m_Modifications:
+    - target: {fileID: 0}
+      propertyPath: _PickUpScale
+      value: 
+      objectReference: {fileID: 159108, guid: 44dcfb26ff8aa674c8b848229ee729e5, type: 2}
+    - target: {fileID: 0}
+      propertyPath: _PickUpMultiply
+      value: 
+      objectReference: {fileID: 151136, guid: fea38dc45fd6ace4ab02b7002c4890df, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 154732}
