@@ -40,8 +40,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 52cfdf09a04128b42aec0cbec58b354d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _PickUpScale: {fileID: 101590, guid: e4e196eeb6aab2445819c9dd65a99636, type: 2}
-  _PickUpMultiply: {fileID: 120074, guid: fea38dc45fd6ace4ab02b7002c4890df, type: 2}
+  _PickUpScale: {fileID: 176296, guid: 25c6c31e2a399be45972832405f9dd0d, type: 2}
+  _PickUpMultiply: {fileID: 151136, guid: fea38dc45fd6ace4ab02b7002c4890df, type: 2}
 --- !u!136 &13672904
 CapsuleCollider:
   m_ObjectHideFlags: 1
