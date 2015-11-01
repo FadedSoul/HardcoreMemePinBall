@@ -11,6 +11,8 @@ TagManager:
   - RightFlipper
   - Die
   - stopper
+  - Scale
+  - Multiply
   layers:
   - Default
   - TransparentFX
@@ -22,7 +24,7 @@ TagManager:
   - 
   - flippers
   - ball
-  - 
+  - trigger
   - 
   - 
   - 

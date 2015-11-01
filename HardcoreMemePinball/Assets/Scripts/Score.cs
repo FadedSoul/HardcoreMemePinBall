@@ -25,10 +25,6 @@ public class Score : MonoBehaviour {
     public void SetScoreText()
 	{
         _ScoreText.text = "Score: " + _Score.ToString();
-		if (_Score == 100) 
-		{
-			Debug.Log("Je hebt 100 score");
-		}
     }
 
 }

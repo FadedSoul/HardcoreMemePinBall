@@ -28,12 +28,12 @@ public class GetAll : MonoBehaviour
 
         if (www.error == null)
         {
-            Debug.Log(www.text);
+            //Debug.Log(www.text);
             //countText.text = www.text;
         }
         else
         {
-            Debug.Log(www.error);
+            //Debug.Log(www.error);
         }
     }
 

@@ -3,21 +3,25 @@ using System.Collections;
 
 public class CamTrigger : MonoBehaviour {
     [SerializeField]
-    private Camera Cam;
-    private bool _Cam;
+    private MainCam getCam;
+    void start()
+    {
+
+    }
 
     void OnTriggerEnter(Collider other)
     {
 
-        if (other.gameObject.tag == "Player")
+        if (other.tag == "Player")
         {
-            if(_Cam == true)
+            Debug.Log(getCam.Cam);
+            if(getCam.Cam == true)
             {
-                _Cam = false;
+                getCam.Cam = false;
             }
             else
             {
-                _Cam = true;
+                getCam.Cam = true;
             }
         }
     }

@@ -8,39 +8,44 @@ public class PickUpManager : MonoBehaviour {
 	private GameObject _PickUpMultiply;
 	private bool ActivePickUp = true;
 	private int _randomPick;
+	private Vector3 _ManagerPos;
 	
+	void Awake()
+	{
+		_ManagerPos = this.transform.position;
+	}
 
 	void OnTriggerEnter(Collider other)
 	{
-
 		if(other.gameObject.tag == "Scale" || other.gameObject.tag == "Multiply")
 		{
 			ActivePickUp = true;
 		}
+		
 		else
 		{
 			ActivePickUp = false;
 			StartCoroutine(PickUpCoolDown());
 		}
-
 	}
-
+	
 	IEnumerator PickUpCoolDown()
 	{
-		yield return new WaitForSeconds(10);
+		yield return new WaitForSeconds(20);
 		if(ActivePickUp == false)
-		{
+		{			
 			_randomPick = Random.Range(1,3);
-			Debug.Log(_randomPick);
+			
 			if(_randomPick == 1)
 			{
-				_PickUpMultiply.transform.position += new Vector3(0,2,0);
 				ActivePickUp = true;
+				_PickUpMultiply.transform.position = _ManagerPos;
 			}
+
 			else if(_randomPick == 2)
 			{
-				_PickUpScale.transform.position += new Vector3(0,2,0);
 				ActivePickUp = true;
+				_PickUpScale.transform.position = _ManagerPos;
 			}
 		}
 	}
